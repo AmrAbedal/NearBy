@@ -13,9 +13,12 @@
 		A0CCCEDF24B9D4EB005A7A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CCCEDD24B9D4EB005A7A36 /* Main.storyboard */; };
 		A0CCCEE124B9D4F1005A7A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CCCEE024B9D4F1005A7A36 /* Assets.xcassets */; };
 		A0CCCEE424B9D4F1005A7A36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CCCEE224B9D4F1005A7A36 /* LaunchScreen.storyboard */; };
+		CC42BC8572FFE6BF99E52E3B /* Pods_NearBy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE8214E11B54B47880C65C5 /* Pods_NearBy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BE8214E11B54B47880C65C5 /* Pods_NearBy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearBy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F1C6DEED97F0646F87873D5 /* Pods-NearBy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearBy.debug.xcconfig"; path = "Target Support Files/Pods-NearBy/Pods-NearBy.debug.xcconfig"; sourceTree = "<group>"; };
 		A0CCCED424B9D4EB005A7A36 /* NearBy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearBy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CCCED724B9D4EB005A7A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0CCCED924B9D4EB005A7A36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		A0CCCEE024B9D4F1005A7A36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0CCCEE324B9D4F1005A7A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0CCCEE524B9D4F1005A7A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A289ACF0FC846314F97DB93D /* Pods-NearBy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearBy.release.xcconfig"; path = "Target Support Files/Pods-NearBy/Pods-NearBy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC42BC8572FFE6BF99E52E3B /* Pods_NearBy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A2FF639AF5656F7AB18D13A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F1C6DEED97F0646F87873D5 /* Pods-NearBy.debug.xcconfig */,
+				A289ACF0FC846314F97DB93D /* Pods-NearBy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		57B8FAB2D5B65658C188DF80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BE8214E11B54B47880C65C5 /* Pods_NearBy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0CCCECB24B9D4EB005A7A36 = {
 			isa = PBXGroup;
 			children = (
 				A0CCCED624B9D4EB005A7A36 /* NearBy */,
 				A0CCCED524B9D4EB005A7A36 /* Products */,
+				2A2FF639AF5656F7AB18D13A /* Pods */,
+				57B8FAB2D5B65658C188DF80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0CCCEE824B9D4F1005A7A36 /* Build configuration list for PBXNativeTarget "NearBy" */;
 			buildPhases = (
+				737535A96FC734613AA66F24 /* [CP] Check Pods Manifest.lock */,
 				A0CCCED024B9D4EB005A7A36 /* Sources */,
 				A0CCCED124B9D4EB005A7A36 /* Frameworks */,
 				A0CCCED224B9D4EB005A7A36 /* Resources */,
+				6174E6F8726F0530E635F8E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6174E6F8726F0530E635F8E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearBy/Pods-NearBy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearBy/Pods-NearBy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NearBy/Pods-NearBy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		737535A96FC734613AA66F24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NearBy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0CCCED024B9D4EB005A7A36 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		A0CCCEE924B9D4F1005A7A36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F1C6DEED97F0646F87873D5 /* Pods-NearBy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		A0CCCEEA24B9D4F1005A7A36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A289ACF0FC846314F97DB93D /* Pods-NearBy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
